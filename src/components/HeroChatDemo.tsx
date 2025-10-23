@@ -80,7 +80,7 @@ export function HeroChatDemo() {
       <div className="relative z-10 flex flex-col items-center mb-4">
         <div className="heidi-logo-orb w-14 h-14 rounded-full shadow-lg flex items-center justify-center">
           <img
-            src="/logos/red_feather_option_1.svg"
+            src="/images/logos/red_feather_option_1.svg"
             alt="Lo de Heidi logo"
             className="w-9 h-9 select-none pointer-events-none"
             draggable={false}

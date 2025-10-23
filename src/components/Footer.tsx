@@ -34,7 +34,7 @@ export function Footer() {
             <a href="#" className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 rounded-full bg-white shadow-sm flex items-center justify-center">
                 <img
-                  src="/logos/red_feather_option_1.svg"
+                  src="/images/logos/red_feather_option_1.svg"
                   alt="Lo de Heidi"
                   className="w-5 h-5 select-none pointer-events-none"
                   draggable={false}

@@ -101,7 +101,7 @@ export function MagicalFloatingOrb({
           }}
         >
           <img
-            src="/logos/red_feather_option_1.svg"
+            src="/images/logos/red_feather_option_1.svg"
             alt="Lo de Heidi"
             className="w-8 h-8 select-none pointer-events-none"
             draggable={false}
