@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+  --background: #F8FAFC;
+  --foreground: #0F172A;
+  --card: #FFFFFF;
+  --card-foreground: #1E293B;
+  --popover: #FFFFFF;
+  --popover-foreground: #0F172A;
+  --primary: #ef4444;
+  --primary-foreground: #ffffff;
+  --secondary: #F1F5F9;
+  --secondary-foreground: #475569;
+  --muted: #F1F5F9;
+  --muted-foreground: #64748B;
+  --accent: #f43f5e;
+  --accent-foreground: #ffffff;
+  --destructive: #EF4444;
+  --destructive-foreground: #ffffff;
+  --border: rgba(148, 163, 184, 0.2);
+  --input: transparent;
+  --input-background: #FFFFFF;
+  --switch-background: #CBD5E1;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: #ef4444;
+  --success: #10B981;
+  --warning: #F59E0B;
+  --radius: 0.75rem;
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #0F172A;
+  --sidebar-primary: #ef4444;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #F1F5F9;
+  --sidebar-accent-foreground: #475569;
+  --sidebar-border: rgba(148, 163, 184, 0.2);
+  --sidebar-ring: #ef4444;
+
+  /* Lo de Heidi red color palette */
+  --noah-orange: #ef4444;
+  --noah-pink: #f43f5e;
+  --noah-yellow: #fb7185;
+  --noah-orb-orange: #ef4444;
+  --noah-orb-pink: #f43f5e;
+  --noah-orb-yellow: #fb7185;
+  --noah-panel-bg: #f9fafb;
+  --noah-border: #e5e7eb;
+  --noah-border-strong: #d1d5db;
+  --noah-border-focus: #9ca3af;
+  --noah-text-primary: #111827;
+  --noah-text-secondary: #4b5563;
+  --noah-text-muted: #9ca3af;
+  --noah-chip-bg: #ffffff;
+  --noah-chip-text: #374151;
+  --noah-chip-border: #e5e7eb;
+  --noah-chip-hover-bg: #fef2f2;
+  --noah-bubble-user-bg: #ef4444;
+  --noah-bubble-assistant-bg: #f3f4f6;
+  --noah-user-avatar-bg: #ef4444;
+  --noah-user-avatar-text: #ffffff;
+  --noah-send-btn-bg: #ef4444;
+  --noah-send-btn-bg-hover: #dc2626;
+  --noah-dropdown-bg: #ffffff;
+  --noah-dropdown-text: #374151;
+  --noah-dropdown-hover-bg: #fef2f2;
+  --noah-dropdown-hover-text: #111827;
+  --noah-dropdown-active-bg: #fee2e2;
+  --noah-dropdown-active-text: #111827;
+  --noah-scrollbar-thumb: #d1d5db;
+  --noah-typing-dot-1: #ef4444;
+  --noah-typing-dot-2: #f43f5e;
+  --noah-typing-dot-3: #fb7185;
+}
+
+.dark {
+  --background: #0B1220;
+  --foreground: #E5E7EB;
+  --card: #111827;
+  --card-foreground: #E5E7EB;
+  --popover: #111827;
+  --popover-foreground: #E5E7EB;
+  --primary: #5B8CFF;
+  --primary-foreground: #ffffff;
+  --secondary: #1F2937;
+  --secondary-foreground: #E5E7EB;
+  --muted: #1F2937;
+  --muted-foreground: #9CA3AF;
+  --accent: #8B5CF6;
+  --accent-foreground: #ffffff;
+  --destructive: #EF4444;
+  --destructive-foreground: #ffffff;
+  --border: rgba(255, 255, 255, 0.1);
+  --input: rgba(255, 255, 255, 0.05);
+  --ring: #5B8CFF;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --success: #10B981;
+  --warning: #F59E0B;
+  --sidebar: #111827;
+  --sidebar-foreground: #E5E7EB;
+  --sidebar-primary: #5B8CFF;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #1F2937;
+  --sidebar-accent-foreground: #E5E7EB;
+  --sidebar-border: rgba(255, 255, 255, 0.1);
+  --sidebar-ring: #5B8CFF;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+}
+
+/**
+ * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
+ */
+@layer base {
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
+    h1 {
+      font-size: var(--text-2xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h2 {
+      font-size: var(--text-xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h3 {
+      font-size: var(--text-lg);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h4 {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    p {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+
+    label {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    button {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    input {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+  }
+}
+
+html {
+  font-size: var(--font-size);
+  scroll-behavior: smooth;
+}
+
+/* Smooth scroll with padding for sticky nav */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-padding-top: 5rem;
+  }
+}
