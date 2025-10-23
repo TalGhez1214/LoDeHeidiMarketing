@@ -21,7 +21,7 @@ export function HeroChatDemo() {
     const currentQuery = QUERIES[currentQueryIndex];
 
     if (!isDeleting && displayedText === currentQuery) {
-      const timeout = setTimeout(() => setIsDeleting(true), 1500);
+      const timeout = setTimeout(() => setIsDeleting(true), 1000);
       return () => clearTimeout(timeout);
     }
 
